@@ -1,35 +1,106 @@
- body {
-     text-align: center;
-     background-color: hsl(204, 42%, 42%);
-
- }
- table {
-    border: 1px solid black;
-    margin-left:200px;
-    margin-top: 50px;
-    background-color: lightblue;
+*{
+    box-sizing: border-box;
+  }
+  
+  header{
+    background-color:burlywood;
+    border:rgb(48, 33, 33);
+    width: 100%;
+    height: 90px;
+}
+body{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color:azure; 
+}
+#logo{
+    float: left;
+    max-width: 10%;
+    margin-top:30px;
+}
+#logo2{
+    float: right;
+    max-width: 10%;
+    vertical-align: middle;
+    padding-bottom:30px;
 
 }
-th , td {
-    border: 1px solid darkblue;
+nav ul li {
+    display: inline-block;
+    vertical-align:middle;
+    font-size: medium;
+    margin: 20px;;
+
+}
+a{
+    color:rgb(22, 5, 5);
+    text-decoration: none;
+    font-size: 20px; 
+    margin-right: 120px;
+  }
+a:hover{
+    background-color:yellow;
+  }
+h1{
+    font-size:xx-large; 
+    text-align: center;
+    margin-right:23%;
+  }
+
+ table {
+  
+    margin-left:100px;
+    margin-top: 50px;
+    background-color:rgb(230, 231, 181);
+    width:90%;
+    border-collapse:unset;
+    border: 1px solid black;
+    text-align: left;
+    padding: 3px 2px;
+    font-size: 20px;
+    height:200px;
+
+}
+
+th{
+    font-weight: bold;
+    font-size:20px;
+    border-left: 2px;
+    background-color: wheat;
+}
+th:hover{
+    color: yellowgreen;
+    background-color: white;
 }
 fieldset{
     display: inline-block;
-    background-color:rgb(30, 77, 109);
-    color: white;
+    width: 250x;
+    height: 250px;
+    background-color:rgb(250, 230, 165);
+    color: rgb(29, 34, 6);
     margin-top:20px ;
-    border: rgb(18, 5, 54) solid 1px ;
+    border: rgb(37, 36, 9) solid 1px ;
+    text-align: center;
 
 }
+label{
+line-height: 50px;}
 input{
 
-    border: solid rgb(4, 4, 46);
+    border: solid rgb(46, 31, 4);
 }
-#location{
-    margin-left: 45px;
+#location {
+    margin-left:90px;
 }
 #button:hover{
     background-color: teal;
     color: rgb(18, 5, 54);
     
+}
+
+footer{
+    margin-top:100%;
+    height:20px;
+    background-color:burlywood;
 }
