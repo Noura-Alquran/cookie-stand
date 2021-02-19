@@ -3,19 +3,19 @@
   <head>
       <title>Home Page</title>
     <link rel="stylesheet" href="css/reset.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styleIndex.css" />
   </head>
 
   <body>
   <header>
+  
+    <img id="logo" src="img/salmon.png" width="200"  /> <h1>Pat’s Salmon Cookies</h1>
    
-    <img id="logo" src="img/salmon.png" width="200"  /> <h1>Pat's Fish Bakery</h1>
-    <img id="logo2" src="img/chinook.jpg" width="200"/>
     <nav>
         <ul>
-            <li>Locations and address </li>
-            <li>ًWork Hours</li>
-            <li>Contact information</li>
+            <li>ً<a href="#two">Locations and address</a></li>
+            <li><a href="#CU">Contact us</a></li>
             <li><a href="sales.html">Our sales Page</a></li>
         </ul>
     </nav> 
@@ -23,17 +23,18 @@
   <main> 
      <section id="one">
        <ul>
+       
+         <li><div>
+          <h3>Our Salmon Cookie </h3>
+          <p>Our Salmon Cookies are part of our 'Love' treats range. The ‘Love’ category contains a range of deliciously different treats, These tasty, crunchy biscuits .
+           They contain no artificial preservatives or colourings,Also,they are low in calories.</p>
+        </div></li>
+        <li id="workHour" > Open on (6.00AM-8.00PM)</li>
          <li class="in"><img class="gg" src="img/fish.jpg" width="200"></li>
       <li class="in"> <img class="gg" src="img/frosted-cookie.jpg"/></li>
       <li class="in"><img class="gg" src="img/cutter.jpeg"/></li>
-      <li>
-        <div>
-         <h3>Home page of the Salmon Cookie</h3>
-         <p>Our Salmon Cookies are part of our 'Love' treats range. The ‘Love’ category contains a range of deliciously different treats, These tasty, crunchy biscuits are made with responsibly sourced salmon, whitefish and sweet potato (a delicious and healthy alternative to white potato)
-          They are grain free, contain no artificial preservatives or colourings, are low in calories.</p>
-       </div>
-      </li> 
-      <li id="workHour" > Open on (6.00AM-8.00PM)</li>
+      
+     
     </ul>
      </section>
     <Section id="two"><h3>Our stores locations</h3>
@@ -51,9 +52,34 @@
     <li><img class="gg" src="img/family.jpg"/></li>
   </ul></section>
      
+  <div id="CU">
+    <form id="cu">
+      <fieldset><legend>Contact us</legend>
+        <input id="name" type="text" placeholder="Name">
+        <br>
+        <input id="email" type="email" placeholder="Your email">
+        <br>
+        <textarea id="m" placeholder="Massage"></textarea>
+        <br>
+        <input type="submit" value="Send" id="button">
+
+      </fieldset>
+    </form>
+  </div>
   </main>
+  <script>
+    const form=document.getElementById('cu');
+    form.addEventListener('submit', contactUs);
+    function contactUs (event){
+      event.preventDefault();
+      let username=event.target.name.value;
+      alert(`Welcome ${username} we will contact you as soon as possible`);
+
+    }
+  </script>
   <footer>
   All rights reseved 2021 &copy;
   </footer>
+  
 </body>
 </html>
